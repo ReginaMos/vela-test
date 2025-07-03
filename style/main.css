@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+input, button {
+  all: unset;
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -95,6 +99,94 @@ header .menu__elements__top__btn {
   padding: 16px;
   border-radius: 8px;
   background-color: #4888FF;
+  margin-right: 16px;
+}
+header .menu__elements__top__input {
+  position: relative;
+  margin-right: 24px;
+}
+header .menu__elements__top__input input {
+  padding: 14px 24px;
+  font-size: 16px;
+  min-width: 645px;
+  border-radius: 8px;
+  border: 1px solid rgba(72, 136, 255, 0.2);
+}
+header .menu__elements__top__input__search-btn {
+  padding: 11px 20px;
+  background-color: #4888FF;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+@media (any-hover: hover) {
+  header .menu__elements__top__input__search-btn {
+    transition: all 0.3s ease 0s;
+  }
+  header .menu__elements__top__input__search-btn:hover {
+    background-color: rgba(72, 136, 255, 0.662745098);
+  }
+}
+header .menu__elements__top__social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 35px;
+}
+header .menu__elements__top__social-icons__item {
+  padding: 14px 12px;
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  height: 48px;
+}
+@media (any-hover: hover) {
+  header .menu__elements__top__social-icons__item {
+    transition: all 0.3s ease 0s;
+  }
+  header .menu__elements__top__social-icons__item:hover {
+    background-color: #D4D9DD;
+  }
+  header .menu__elements__top__social-icons__item:hover svg path {
+    stroke: #4888FF;
+  }
+}
+header .menu__elements__top__languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 55px;
+}
+header .menu__elements__top__languages img {
+  margin-right: 6px;
+}
+header .menu__elements__top__languages .delimiter {
+  width: 1px;
+  height: 12px;
+  background-color: #343A3F;
+  margin: 0 4px;
+}
+header .menu__elements__top__languages__item {
+  height: 20px;
+}
+header .menu__elements__top__languages__item:nth-child(4) {
+  color: rgba(52, 58, 63, 0.2);
+}
+header .menu__elements__top__actions__item {
+  border: 1px solud #D3D3D3;
+  border-radius: 4px;
+  padding: 14.8px 13px;
+}
+@media (any-hover: hover) {
+  header .menu__elements__top__actions__item {
+    transition: all 0.3s ease 0s;
+  }
+  header .menu__elements__top__actions__item:hover svg {
+    fill: #fff;
+  }
 }
 
 main {
