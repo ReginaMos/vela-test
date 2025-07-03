@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Maza";
+  src: url("../assets/fonts/Maza/Maza.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+}
+
+header {
+  font-family: "Maza", sans-serif;
+}
+header .promotion {
+  padding: 8px 40px;
+  background-color: #F4F4F4;
+  color: #343A3F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .promotion__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+header .promotion__contacts__location, header .promotion__contacts__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .promotion__contacts__location {
+  gap: 6.65px;
+}
+header .promotion__contacts__phone {
+  gap: 12px;
+}
+header .promotion__schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+header .promotion__services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+@media (any-hover: hover) {
+  header .promotion__services__item {
+    transition: all 0.3s ease 0s;
+  }
+  header .promotion__services__item:hover {
+    color: #4888FF;
+    cursor: default;
+  }
+}
+header .menu {
+  background-color: #fff;
+  color: #343A3F;
+  padding: 16px 40px 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+header .menu__icon {
+  padding: 21.75px;
+  border-radius: 50%;
+  background-color: #4888FF;
+}
+header .menu__elements {
+  display: flex;
+  flex-direction: column;
+}
+header .menu__elements__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu__elements__top__btn {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #4888FF;
+}
+
+main {
+  font-family: "Tenor Sans", sans-serif;
+}
+main .banner {
+  color: #fff;
+  background: linear-gradient(90deg, #672870, #4FE0FF);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .banner__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 26px;
+  padding: 0 45px 0 100px;
+}
+main .banner__text__heading {
+  font-size: 32px;
+  line-height: 36px;
+  max-width: 729px;
+}
+main .banner__text__info {
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 640px;
+}
+main .banner__text__btn {
+  font-family: "Maza", sans-serif;
+  color: #672870;
+  background-color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 16px 40px;
+  border-radius: 8px;
+}
+@media (any-hover: hover) {
+  main .banner__text__btn {
+    transition: all 0.3s ease 0s;
+  }
+  main .banner__text__btn:hover {
+    background-color: rgba(255, 255, 255, 0.7411764706);
+    box-shadow: 4px 4px 18px 16px rgba(34, 60, 80, 0.4);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

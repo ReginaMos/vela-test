@@ -1,0 +1,137 @@
+@font-face 
+    font-family: 'Maza'
+    src: url('../assets/fonts/Maza/Maza.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html 
+    height: 100%
+    scroll-behavior: smooth
+
+body 
+    height: 100%
+
+header
+    font-family: 'Maza', sans-serif
+
+    .promotion
+        padding: 8px 40px
+        background-color: #F4F4F4
+        color: #343A3F
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        &__contacts
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 12px
+
+            &__location, &__phone       
+                display: flex
+                justify-content: center
+                align-items: center 
+
+            &__location
+                gap: 6.65px
+
+            &__phone
+                gap: 12px
+        
+        &__schedule
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 11px
+
+        &__services
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 16px
+
+            &__item
+                @media (any-hover: hover)
+                    transition: all 0.3s ease 0s
+                    &:hover
+                        color: #4888FF
+                        cursor: default
+
+    .menu
+        background-color: #fff
+        color: #343A3F
+        padding: 16px 40px 24px 40px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 35px
+
+        &__icon
+            padding: 21.75px
+            border-radius: 50%
+            background-color: #4888FF
+
+        &__elements
+            display: flex
+            flex-direction: column
+            
+            &__top
+                display: flex
+                justify-content: space-between
+                align-items: center
+
+                &__btn
+                    padding: 16px
+                    border-radius: 8px
+                    background-color: #4888FF
+
+
+main 
+    font-family: 'Tenor Sans', sans-serif
+
+    .banner
+        color: #fff
+        background: linear-gradient(90deg, #672870, #4FE0FF)
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        &__text
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            gap: 26px
+            padding: 0 45px 0 100px
+
+            &__heading
+                font-size: 32px
+                line-height: 36px
+                max-width: 729px
+
+            &__info
+                font-size: 18px
+                line-height: 24px
+                max-width: 640px
+
+            &__btn
+                font-family: 'Maza', sans-serif
+                color: #672870
+                background-color: #fff
+                text-decoration: none
+                text-align: center
+                padding: 16px 40px
+                border-radius: 8px
+
+                @media (any-hover: hover)
+                    transition: all 0.3s ease 0s
+
+                    &:hover
+                        background-color: #ffffffbd 
+                        box-shadow: 4px 4px 18px 16px rgba(34, 60, 80, 0.4)
